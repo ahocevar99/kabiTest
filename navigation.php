@@ -14,7 +14,7 @@
         <p>Pišite nam</p>
     </div>
     <div class="nav-item">
-        <p>IZDELKI</p>
+        <a href="./index.php">IZDELKI</a>
     </div>
 </div>
 <div class="navigation-mobile-menu" onclick=showMobileNav() style="display: none;">
@@ -26,5 +26,5 @@
     <p>O nas</p>
     <p>Kontakt</p>
     <p>Pišite nam</p>
-    <p>IZDELKI</p>
+    <a href="./index.php">IZDELKI</a>
 </div>

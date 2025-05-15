@@ -1,0 +1,104 @@
+.navigation-desktop {
+    width: 80%;
+    height: 50px;
+    margin-top: 43px;
+    background-image: linear-gradient(-180deg, #48C6EF 0%, #6F86D6 100%);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 130px 130px 130px 130px 130px;
+    margin: 30px auto;
+    align-items: center;
+}
+
+.navigation-desktop .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.navigation-desktop .nav-item i {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.24);
+}
+
+.navigation-desktop .nav-item p,
+.navigation-desktop .nav-item a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.30);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navigation-desktop .nav-item p:hover,
+.navigation-desktop .nav-item a:hover {
+    color: rgba(255, 255, 255, 0.24);
+}
+
+.navigation-desktop .nav-item::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 28px;
+    background-color: rgba(0, 0, 0, 0.14);
+}
+
+.navigation-mobile-menu {
+    color: #5EA0E0;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.navigation-mobile-menu:hover {
+    color: #495866;
+}
+
+.navigation-mobile {
+    height: 100vh;
+    width: 70%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(243, 246, 248, 0.808);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+}
+
+.navigation-mobile p,
+.navigation-mobile a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: #5EA0E0;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.30);
+    margin: 20px 60px 0 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navigation-mobile i {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 50px;
+    color: #5EA0E0;
+    cursor: pointer;
+}
+
+.navigation-mobile p:hover,
+.navigation-mobile i:hover,
+.navigation-mobile a:hover {
+    color: rgba(167, 167, 167, 0.719);
+}

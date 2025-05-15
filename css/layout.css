@@ -1,0 +1,11 @@
+.container {
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.logo-image {
+    margin-left: 10%;
+    height: 60px;
+    width: 139px;
+}

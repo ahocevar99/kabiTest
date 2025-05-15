@@ -1,11 +1,25 @@
 function showMobileNav() {
     const navMobile = document.querySelector('.navigation-mobile');
-    navMobile.style.display='flex'
+    navMobile.style.display = 'flex'
+
+    gsap.set(navMobile, { x: '100%' });
+    gsap.to(navMobile, {
+        duration: 0.5,
+        x: 0,
+        ease: 'power3.out'
+    });
 }
 
 function closeMobileNav() {
     const navMobile = document.querySelector('.navigation-mobile');
-    navMobile.style.display='none'
+    gsap.to(navMobile, {
+        duration: 0.4,
+        x: '100%',
+        ease: 'power3.in',
+        onComplete: () => {
+            navMobile.style.display = 'none';
+        }
+    });
 }
 
 function toggleNavigation() {

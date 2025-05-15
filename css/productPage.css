@@ -1,0 +1,26 @@
+.product-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    margin: 30px auto 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+.product-page img {
+    width: 360px;
+    height: 203px;
+}
+
+.product-page-data {
+    margin: 0 30px;
+    width: 80%;
+}
+
+.product-page .return-button {
+    margin-top: 30px;
+}
